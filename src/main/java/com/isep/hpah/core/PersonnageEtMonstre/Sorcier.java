@@ -1,16 +1,13 @@
-package com.isep.hpah.core;
+package com.isep.hpah.core.PersonnageEtMonstre;
 
+import com.isep.hpah.core.PersonnageEtMonstre.Caractere;
 import lombok.*;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Scanner;
-
 /*
-com.isep.hpah.core.Sorcier avec baguette, potion et une maison
+com.isep.hpah.core.PersonnageEtMonstre.Sorcier avec baguette, potion et une maison
  */
 @Getter @Setter
-public class Sorcier extends Caractere{
+public class Sorcier extends Caractere {
 
 
 

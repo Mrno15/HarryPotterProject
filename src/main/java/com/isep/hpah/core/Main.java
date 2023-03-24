@@ -3,7 +3,7 @@ package com.isep.hpah.core;
 
 import com.isep.hpah.core.Apprendre.GameLogic;
 import com.isep.hpah.core.Baguette.Core;
-import com.isep.hpah.core.Caractere;
+import com.isep.hpah.core.PersonnageEtMonstre.Caractere;
 import com.isep.hpah.core.House.SortingHat;
 
 public class Main {
