@@ -26,4 +26,9 @@ public class GameLogic {
         System.out.println(" \nEnter anything to continue..");
         scanner.next();
     }
+
+    public static void spaceBetweenText(){
+        for (int i =0; i <1; i++ )
+            System.out.println();
+    }
 }

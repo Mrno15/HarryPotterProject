@@ -17,16 +17,16 @@ public abstract class Caractere {
         this.hp = maxHp;
     }
 
-    public static int nomInt(String prompt) {
+    public static String nomInt(String prompt) {
         Scanner sc = new Scanner(System.in);
-        int number;
-        do {
-            System.out.print("Veuillez saisir un nombre entre 0 et 20 : ");
-            number = sc.nextInt();
-        } while (number < 0 || number > 20);
+        String Name;
 
-        System.out.println("Vous avez saisi : " + number);
-        return (number);
+        System.out.print("Quelle nom souhaitez vous donner a votre personnage");
+        Name = sc.nextLine();
+
+
+        System.out.println("Vous avez saisi : " + Name);
+        return (Name);
 
     }
 

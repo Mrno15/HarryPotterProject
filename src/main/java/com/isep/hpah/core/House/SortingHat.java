@@ -4,14 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.isep.hpah.core.Sorcier;
 import lombok.*;
 
 @Getter
 @Setter
 public class SortingHat {
 
-    public static void main(String[] args)
+    public static String getHouse(String prompt)
     {
         String myHouse;
 
@@ -26,7 +25,7 @@ public class SortingHat {
         Random rand = new Random();
         myHouse = ( list.get(rand.nextInt(list.size())));
         System.out.println("L'élément sélectionné au hasard est : " + myHouse);
-
+        return myHouse;
     }
 
 }
