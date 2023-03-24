@@ -13,8 +13,8 @@ public class SortingHat {
 
     public static void main(String[] args)
     {
-        Sorcier myHouse = new Sorcier();
-        myHouse.getHouse();
+        String myHouse;
+
 
         List<String> list = new ArrayList<String>();
         list.add("Griffondor");
@@ -24,8 +24,8 @@ public class SortingHat {
         System.out.println(list);
 
         Random rand = new Random();
-        myHouse.setHouse( list.get(rand.nextInt(list.size())));
-        System.out.println("L'élément sélectionné au hasard est : " + myHouse.getHouse());
+        myHouse = ( list.get(rand.nextInt(list.size())));
+        System.out.println("L'élément sélectionné au hasard est : " + myHouse);
 
     }
 

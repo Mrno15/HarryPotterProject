@@ -10,27 +10,25 @@ import java.util.Scanner;
 com.isep.hpah.core.Sorcier avec baguette, potion et une maison
  */
 @Getter @Setter
-public class Sorcier {
-    private String name;
-    private String house;
-    private String core;
-    private int longueur;
+public class Sorcier extends Caractere{
 
-    public static void main(String[] args) throws Exception {
-        InputStreamReader isr = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(isr); // permet de lire les chaines de caractères
-        Scanner sc;
-        System.out.print("Quelle est le nom de votre sorcier??");
-        String name = br.readLine();
-        System.out.println(name);
 
-        System.out.println();
-        System.out.println(name);
-        System.out.println(name);
 
+    public Sorcier(String name, int maxHp, int xp) {
+
+        super(name, maxHp, xp);
     }
 
 
 
+
+
+    public int attack() {
+        return 0;
+    }
+
+    public int defence() {
+        return 0;
+    }
 }
 
