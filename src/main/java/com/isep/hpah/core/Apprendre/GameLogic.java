@@ -31,4 +31,10 @@ public class GameLogic {
         for (int i =0; i <1; i++ )
             System.out.println();
     }
+
+    public static void clearConsole(){
+        for (int i =0; i <100; i++ )
+            System.out.println();
+    }
+
 }

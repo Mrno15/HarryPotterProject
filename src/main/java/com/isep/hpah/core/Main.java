@@ -10,8 +10,8 @@ import com.isep.hpah.core.PersonnageEtMonstre.Sorcier;
 public class Main {
     public static void main(String[] args) {
 
-        String Name = Caractere.nomInt("Mettez un chiffre");
-        System.out.println("You choise number " + Name);
+
+        System.out.println("You choise number " + "2" );
         GameLogic.spaceBetweenText();
 /*
         String House = SortingHat.getHouse("Oh  sorcerer, this is your house");
@@ -21,7 +21,7 @@ public class Main {
         Core.nomCore();
         GameLogic.spaceBetweenText();
 */
-        new Sorcier(Name);
+        new Sorcier("ton nom");
 
         System.out.println();
     }

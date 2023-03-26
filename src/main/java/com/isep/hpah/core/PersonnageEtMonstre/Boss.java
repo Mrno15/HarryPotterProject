@@ -1,8 +1,8 @@
 package com.isep.hpah.core.PersonnageEtMonstre;
 
 public class Boss extends Caractere{
-    public Boss(String name, int maxHP, int xp) {
-        super(name, maxHP, xp);
+    public Boss(String name) {
+        super(name, 2000, 0);
     }
 
     public int attack() {
