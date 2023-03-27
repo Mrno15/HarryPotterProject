@@ -2,9 +2,10 @@ package com.isep.hpah.core;
 
 
 import com.isep.hpah.core.Apprendre.GameLogic;
-import com.isep.hpah.core.Apprendre.Pet;
+import com.isep.hpah.core.Apprendre.Niveaux;
+import com.isep.hpah.core.House.Pet;
 import com.isep.hpah.core.Baguette.Core;
-import com.isep.hpah.core.PersonnageEtMonstre.Caractere;
+import com.isep.hpah.core.Baguette.Length;
 import com.isep.hpah.core.House.SortingHat;
 import com.isep.hpah.core.PersonnageEtMonstre.Sorcier;
 import lombok.Data;
@@ -14,34 +15,35 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        ////////////////////////////////////////////////////////////// Intro Game ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         Niveaux.introGame();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("You choise number " + "2" );
-        GameLogic.spaceBetweenText();
-/*
-        String House = SortingHat.getHouse("Oh  sorcerer, this is your house");
-        System.out.println("You choise number " + House);
         GameLogic.spaceBetweenText();
 
-        Core.nomCore();
-        GameLogic.spaceBetweenText();
-*/
-        System.out.println("rentre un nom");
+        ////////////////////////////////////////////////////////////// Choose a name ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        System.out.println(" Choose a name");
         String nom = scanner.nextLine();
         Sorcier sorcier = Sorcier.createSorcier(nom);
+        System.out.println(sorcier.getName() + "est donc ton nom");
+        GameLogic.spaceBetweenText();
 
-        System.out.println(sorcier.getName()+"est donc ton nom");
+        ////////////////////////////////////////////////////////////// Set House ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         sorcier.setHouse(SortingHat.getHouse());
 
-
-
-
+        ////////////////////////////////////////////////////////////// Set Pet ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         sorcier.setPet(Pet.nomPet());
         System.out.println(sorcier.getPet() + " est mon annimal pref <3 love (nothing sexual) impostor sounds start playing");
 
+        ////////////////////////////////////////////////////////////// Wand ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         Core.nomCore();
+        Length.wandLength();
+
+
 
 
 

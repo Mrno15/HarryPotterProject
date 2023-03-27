@@ -1,6 +1,6 @@
 package com.isep.hpah.core.PersonnageEtMonstre;
 
-import com.isep.hpah.core.Apprendre.Pet;
+import com.isep.hpah.core.House.Pet;
 import com.isep.hpah.core.Baguette.Core;
 import com.isep.hpah.core.House.House;
 

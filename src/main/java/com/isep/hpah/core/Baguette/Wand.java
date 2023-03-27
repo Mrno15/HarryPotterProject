@@ -7,7 +7,7 @@ import lombok.experimental.SuperBuilder;
 @Data
 @SuperBuilder
 public class Wand {
-    private Core core;
+    Core core = null;
     private Length length;
 
 

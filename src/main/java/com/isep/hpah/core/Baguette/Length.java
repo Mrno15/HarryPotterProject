@@ -1,10 +1,7 @@
 package com.isep.hpah.core.Baguette;
 
-import lombok.Data;
-
 import java.util.Scanner;
 
-@Data
 public class Length {
         public static int wandLength() {
             Scanner sc = new Scanner(System.in);

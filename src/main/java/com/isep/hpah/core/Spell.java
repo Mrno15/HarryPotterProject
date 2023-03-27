@@ -2,31 +2,31 @@ package com.isep.hpah.core;
 import java.util.Scanner;
 
 
-public enum Sort {
+public enum Spell {
     Sort1,
     Sort2,
     Sort3;
 
 
-    public static void choixSort() {
-        System.out.println("Veuillez choisir une option :");
+    public static void premierSort() {
+        System.out.println("Choose one of the sort :");
         System.out.println("1. Sort1");
         System.out.println("2. Sort2");
     }
 
-    public static void choixSort1() {
-        System.out.println("Veuillez choisir une option :");
+    public static void deuxiemeSort1() {
+        System.out.println("Choose one of the sort :");
         System.out.println("1. Sort1");
         System.out.println("2. Sort2");
         System.out.println("3. Sort3");
     }
 
 
-    public static Sort nomSort(int xp) {
+    public static Spell nomSort(int xp) {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             if (xp == 0) {
-                choixSort();
+                premierSort();
                 int core = scanner.nextInt();
                 switch (core) {
                     case 1:
@@ -41,7 +41,7 @@ public enum Sort {
                         break;
                 }
             } else {
-                choixSort1();
+                deuxiemeSort1();
                 int core = scanner.nextInt();
                 switch (core) {
                     case 1:
@@ -60,5 +60,10 @@ public enum Sort {
                 }
             }
         }
+    }
+
+    public static void degatSort(){
+
+
     }
 }

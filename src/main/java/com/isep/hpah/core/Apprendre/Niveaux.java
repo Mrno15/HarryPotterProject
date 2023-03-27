@@ -1,4 +1,4 @@
-package com.isep.hpah.core;
+package com.isep.hpah.core.Apprendre;
 
 
 import com.isep.hpah.core.Apprendre.GameLogic;

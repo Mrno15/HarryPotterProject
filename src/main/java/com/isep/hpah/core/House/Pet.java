@@ -1,8 +1,7 @@
-package com.isep.hpah.core.Apprendre;
+package com.isep.hpah.core.House;
 
 import lombok.Getter;
 
-import javax.management.Query;
 import java.util.Scanner;
 
 @Getter
