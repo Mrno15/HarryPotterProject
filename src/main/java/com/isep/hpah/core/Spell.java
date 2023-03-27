@@ -62,8 +62,5 @@ public enum Spell {
         }
     }
 
-    public static void degatSort(){
-
-
-    }
+    public static String[] Sort = {};
 }

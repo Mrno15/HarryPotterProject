@@ -3,6 +3,8 @@ package com.isep.hpah.core.PersonnageEtMonstre;
 import lombok.Data;
 import lombok.experimental.SuperBuilder;
 
+import java.sql.SQLOutput;
+
 @Data
 @SuperBuilder
 public class Enemy extends Caractere{
@@ -23,24 +25,32 @@ public static Enemy Troll(String name){
 
     return Troll;
 }
+    public static int healthChangeEnemy (int hp,int degat){
+        int hpLeft = hp -degat;
+        if (hpLeft <0){
+            System.out.println("The enemy is dead");
+            return (0);
 
-    public int attack() {
-        return 50;
+        }else {
+            return (hpLeft);
+        }
+
     }
 
-    public int defence() {
-        return 0;
-    }
 
-
-    public static int healthChangeEnemy (int hp){
-        return hp;
-    }
 
     public static int xpChangeEnemy (int hp){
         return hp;
     }
 
 
+    @Override
+    public int attack() {
+        return 0;
+    }
 
+    @Override
+    public int defence() {
+        return 0;
+    }
 }
