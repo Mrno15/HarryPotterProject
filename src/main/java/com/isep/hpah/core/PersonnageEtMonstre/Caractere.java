@@ -2,7 +2,6 @@ package com.isep.hpah.core.PersonnageEtMonstre;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-import java.util.Scanner;
 
 @Data
 @SuperBuilder(toBuilder = true)

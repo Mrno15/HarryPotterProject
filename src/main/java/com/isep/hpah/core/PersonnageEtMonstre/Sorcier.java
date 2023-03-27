@@ -3,7 +3,7 @@ package com.isep.hpah.core.PersonnageEtMonstre;
 import com.isep.hpah.core.Apprendre.Pet;
 import com.isep.hpah.core.Baguette.Core;
 import com.isep.hpah.core.House.House;
-import com.isep.hpah.core.PersonnageEtMonstre.Caractere;
+
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -24,7 +24,7 @@ public class Sorcier extends Caractere {
     private Core core;
 
 
-    public static String nomInt(String prompt) {
+    public static String nomInt() {
         Scanner sc = new Scanner(System.in);
         String Name;
         System.out.print("Quelle nom souhaitez vous donner a votre personnage");
@@ -43,6 +43,7 @@ public class Sorcier extends Caractere {
                 .hp(100)
                 .maxHp(200)
                // .potion(listpotion)
+                .xp(0)
                 .build();
 
         return sorcier;
