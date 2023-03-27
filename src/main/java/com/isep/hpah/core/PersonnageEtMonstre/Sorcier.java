@@ -1,8 +1,11 @@
 package com.isep.hpah.core.PersonnageEtMonstre;
 
+import com.isep.hpah.core.Apprendre.Pet;
+import com.isep.hpah.core.Baguette.Core;
 import com.isep.hpah.core.House.House;
 import com.isep.hpah.core.PersonnageEtMonstre.Caractere;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.util.Scanner;
 
@@ -10,9 +13,16 @@ import java.util.Scanner;
 com.isep.hpah.core.PersonnageEtMonstre.Sorcier avec baguette, potion et une maison
  */
 @Data
+@SuperBuilder
 public class Sorcier extends Caractere {
 
-private House house;
+
+    private House house;
+
+    private Pet pet;
+
+    private Core core;
+
 
     public static String nomInt(String prompt) {
         Scanner sc = new Scanner(System.in);
@@ -23,10 +33,21 @@ private House house;
         return (Name);
 
     }
-    public Sorcier(String name) {
-        super(name, 200, 0);
+//    public Sorcier(String name) {
+//        super(name, 200, 0);
+//
+//    }
+    public static Sorcier createSorcier(String name){
+        Sorcier sorcier = Sorcier.builder()
+                .name(name)
+                .hp(100)
+                .maxHp(200)
+               // .potion(listpotion)
+                .build();
 
+        return sorcier;
     }
+
 
     public static void monterNiveaux(){
         //getxp

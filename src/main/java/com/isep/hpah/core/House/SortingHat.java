@@ -10,30 +10,19 @@ import com.isep.hpah.core.PersonnageEtMonstre.Sorcier;
 
 import lombok.*;
 
-@Getter
-@Setter
+@Data
 public class SortingHat {
 
 
 
-    public static House getHouse()
-    {
-        House myHouse = new House();
+    public static House getHouse() {
 
-        List<String> list = new ArrayList<String>();
-        list.add("Griffondor");
-        list.add("Poussoufle");
-        list.add("Serpentard");
-        list.add("Serdaigle");
-        System.out.println(list);
+        House house = House.chooseHouse();
+        System.out.println("L'élément sélectionné au hasard est : " + house);
 
-        Random rand = new Random();
-        String setmyHouse = (list.get(rand.nextInt(list.size())));
-        System.out.println("L'élément sélectionné au hasard est : " + myHouse);
-        House.sethouse;
-        val House = House.gethouse;
+  //      Sorcier.setHouse(House);
 
-        return myHouse;
+        return house;
     }
 
 }
