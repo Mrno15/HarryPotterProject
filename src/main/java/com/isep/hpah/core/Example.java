@@ -1,7 +1,6 @@
 package com.isep.hpah.core;
 
 import com.isep.hpah.core.Apprendre.GameLogic;
-import com.isep.hpah.core.PersonnageEtMonstre.Enemy;
 import com.isep.hpah.core.PersonnageEtMonstre.Sorcier;
 import lombok.Data;
 

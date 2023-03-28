@@ -1,7 +1,6 @@
 package com.isep.hpah.core.Apprendre;
 
 
-import com.isep.hpah.core.Apprendre.GameLogic;
 
 public class Niveaux {
 
