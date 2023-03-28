@@ -19,12 +19,13 @@ public enum Spell {
         if (input == 0) {
             System.out.println("Choose one of the spell :");
             System.out.println("1. Wirgardium_Leviosa");
-        } else if (input == 2) {
+        }
+        else if (input == 2) {
 
         System.out.println("Choose one of the spell :");
         System.out.println("1. Wirgardium_Leviosa");
         System.out.println("Choose one of the spell :");
-    }
+        }
         else if (input == 3) {
 
             System.out.println("Choose one of the spell :");

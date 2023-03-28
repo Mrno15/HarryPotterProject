@@ -47,7 +47,8 @@ public class GameLogic {
                 System.out.println(sorcier.getName() + "\nHP: " + sorcier.getHp() + "/" + sorcier.getMaxHp());
                 System.out.println("Choose an action:");
                 int input = Sorcier.choixSorcier();
-
+                System.out.println(input);
+                input = scanner.nextInt();
                 //react accordingly to player input
                 if (input == 1) {
                     //FIGHT
@@ -83,10 +84,9 @@ public class GameLogic {
                     }
 
                 else if (input == 2) {
-                    Spell.allSpell(sorcier);
-                    anythingToContinue();
-
-                    }
+                Spell.allSpell(sorcier);
+                anythingToContinue();
+                }
 
                 else if (input == 3) {
                         //USE POTION
@@ -131,9 +131,6 @@ public class GameLogic {
 //                        if(player.hp <= 0)
 //                            playerDied();
 //                    }
-                    } else {
-                        System.out.println("YOU CANNOT ESCAPE THE EVIL EMPEROR!!!");
-                        anythingToContinue();
                     }
 
                 }
