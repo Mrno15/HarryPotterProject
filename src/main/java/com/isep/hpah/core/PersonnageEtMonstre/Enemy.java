@@ -16,8 +16,12 @@ public class Enemy extends Caractere{
                 .name(name)
                 .hp(2000)
                 .maxHp(2000)
+                .xp(0)
+                .precision(75)
+                //.defense(199)
                 // .potion(listpotion)
                 //.listattack
+
                 .build();
         return troll;
     }

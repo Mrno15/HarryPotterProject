@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ea11795-1b51-4420-83c3-01b53a1245ef" name="Changes" comment="On est au premier niveaux">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Apprendre/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Apprendre/GameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Apprendre/Niveaux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Apprendre/Niveaux.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/PersonnageEtMonstre/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/PersonnageEtMonstre/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/PersonnageEtMonstre/Sorcier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/PersonnageEtMonstre/Sorcier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680008839482</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="On est au premier niveaux">
+      <created>1680018890621</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680018890621</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,17 +256,6 @@
     <MESSAGE value="On continue avec les enemies&#10;+" />
     <MESSAGE value="On est au premier niveaux" />
     <option name="LAST_COMMIT_MESSAGE" value="On est au premier niveaux" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/isep/hpah/core/PersonnageEtMonstre/Sorcier.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

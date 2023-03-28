@@ -1,6 +1,7 @@
 package com.isep.hpah.core.Apprendre;
 
 
+import com.isep.hpah.core.PersonnageEtMonstre.Enemy;
 
 public class Niveaux {
 
@@ -19,5 +20,6 @@ public class Niveaux {
         System.out.println(" But somethings is HERE, In the toilet, facing you.  " );
         System.out.println(" You need to fight ! " );
     }
+
 
 }

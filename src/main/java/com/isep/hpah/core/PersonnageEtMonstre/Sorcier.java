@@ -4,6 +4,7 @@ import com.isep.hpah.core.House.Pet;
 import com.isep.hpah.core.Baguette.Core;
 import com.isep.hpah.core.House.House;
 
+import com.isep.hpah.core.Spell;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -90,8 +91,13 @@ public class Sorcier extends Caractere {
 
 
 
-    public int attack() {
+    public int attack(Enemy enemy, Spell spell) {
         return 50;
+    }
+
+    @Override
+    public int attack() {
+        return 0;
     }
 
     public int defence() {
