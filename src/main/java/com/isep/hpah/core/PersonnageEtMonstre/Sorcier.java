@@ -9,9 +9,6 @@ import lombok.experimental.SuperBuilder;
 
 import java.util.Scanner;
 
-/*
-com.isep.hpah.core.PersonnageEtMonstre.Sorcier avec baguette, potion et une maison
- */
 @Data
 @SuperBuilder
 public class Sorcier extends Caractere {
@@ -33,10 +30,6 @@ public class Sorcier extends Caractere {
         return (Name);
 
     }
-//    public Sorcier(String name) {
-//        super(name, 200, 0);
-//
-//    }
     public static Sorcier createSorcier(String name){
         Sorcier sorcier = Sorcier.builder()
                 .name(name)
@@ -44,20 +37,61 @@ public class Sorcier extends Caractere {
                 .maxHp(200)
                // .potion(listpotion)
                 .xp(0)
+
                 .build();
 
         return sorcier;
     }
 
-
-    public static void monterNiveaux(){
-        //getxp
+    public static void playerOptions(){
+        System.out.println(" 1. Attack ");
+        System.out.println(" 2. Spell ");
+        System.out.println(" 3. Potion ");
+        System.out.println(" 4. Defence ");
     }
 
 
 
+    public static String[]  ChoixSorcier = { "Attack", "Spell", "Potion", "Defence"};
+
+    public static int choixSorcier(){
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("Choose one of the following options");
+            playerOptions();
+            int core = scanner.nextInt();
+            switch (core) {
+                case 1:
+                    System.out.println("You choose to Attack");
+                    return 1;
+                case 2:
+                    System.out.println("You choose a Spell");
+                    return 2;
+                case 3:
+                    System.out.println("You choose a Potion");
+                    return 3;
+                case 4:
+                    System.out.println("You choose to Defence");
+                    return 4;
+                default:
+                    System.out.println("Option invalide");
+                    break;
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
     public int attack() {
-        return 0;
+        return 50;
     }
 
     public int defence() {

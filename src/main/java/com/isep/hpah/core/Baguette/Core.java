@@ -1,9 +1,6 @@
 package com.isep.hpah.core.Baguette;
-import com.isep.hpah.core.PersonnageEtMonstre.Sorcier;
-import lombok.Data;
 
 import java.util.Scanner;
-
 public enum Core {
     Coeur_de_licorne,
     Corne_de_dragon,
@@ -35,7 +32,10 @@ public enum Core {
             default:
                 System.out.println("Option invalide");
                 break;
-        }}
+        }
+
+
+        }
 
 
 
