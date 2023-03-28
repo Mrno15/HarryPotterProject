@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ea11795-1b51-4420-83c3-01b53a1245ef" name="Changes" comment="On est au premier niveaux">
+    <list default="true" id="2ea11795-1b51-4420-83c3-01b53a1245ef" name="Changes" comment="Le COMBATTTTTTTTTT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Apprendre/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Apprendre/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Apprendre/Niveaux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Apprendre/Niveaux.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/PersonnageEtMonstre/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/PersonnageEtMonstre/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/PersonnageEtMonstre/Sorcier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/isep/hpah/core/PersonnageEtMonstre/Sorcier.java" afterDir="false" />
     </list>
@@ -53,10 +50,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProblemsViewState">
@@ -230,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680018890621</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Le COMBATTTTTTTTTT">
+      <created>1680033925137</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680033925137</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,7 +259,8 @@
     <MESSAGE value="bon début" />
     <MESSAGE value="On continue avec les enemies&#10;+" />
     <MESSAGE value="On est au premier niveaux" />
-    <option name="LAST_COMMIT_MESSAGE" value="On est au premier niveaux" />
+    <MESSAGE value="Le COMBATTTTTTTTTT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Le COMBATTTTTTTTTT" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

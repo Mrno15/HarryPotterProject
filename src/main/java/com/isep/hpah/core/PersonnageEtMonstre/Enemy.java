@@ -47,11 +47,11 @@ public class Enemy extends Caractere{
 
     @Override
     public int attack() {
-        return 0;
+        return 30;
     }
 
     @Override
     public int defence() {
-        return 0;
+        return 20;
     }
 }

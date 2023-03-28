@@ -91,17 +91,17 @@ public class Sorcier extends Caractere {
 
 
 
-    public int attack(Enemy enemy, Spell spell) {
+    public int attackSpell(Enemy enemy, Spell spell) {
         return 50;
     }
 
     @Override
     public int attack() {
-        return 0;
+        return 50;
     }
 
     public int defence() {
-        return 0;
+        return 20;
     }
 
 

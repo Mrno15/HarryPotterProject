@@ -55,19 +55,14 @@ public class GameLogic {
                 //check that dmg and dmgTook isn't negative
                 if(dmgTook < 0){
                     //add some dmg if player defends very well
-                    dmg -= dmgTook/2;
                     dmgTook = 0;
                 }
-//                if(dmg < 0)
-//                    dmg = 0;
-//                //deal damge to both parties
-//                sorcier. -= dmgTook;
-//                enemy.hp -= dmg;
-//                //print the info of this battle round
-//                clearConsole();
-
+                if(dmg < 0){
+                    //add some dmg if player defends very well
+                    dmg = 0;
+                }
                 System.out.println("You dealt " + dmg + " damage to the " + enemy.getName()+ ".");
-
+                enemy.setHp(Enemy.healthChangeEnemy(enemy.getHp(),dmg));
                 System.out.println("The " + enemy.getName() + " dealt " + dmgTook + " damage to you.");
                 anythingToContinue();
                 //check if player is still alive or dead
