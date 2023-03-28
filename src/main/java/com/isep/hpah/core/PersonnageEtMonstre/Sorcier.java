@@ -10,6 +10,7 @@ import lombok.experimental.SuperBuilder;
 
 import java.util.Scanner;
 
+@Getter
 @Data
 @SuperBuilder
 public class Sorcier extends Caractere {
@@ -21,6 +22,7 @@ public class Sorcier extends Caractere {
 
     private Core core;
 
+    // mettre attack bonus, defbonus, augamenteation pussance sort pour les effets des maisons
 
     public static String nomInt() {
         Scanner sc = new Scanner(System.in);
@@ -38,6 +40,8 @@ public class Sorcier extends Caractere {
                 .maxHp(200)
                // .potion(listpotion)
                 .xp(0)
+                .potion(50)
+                .precision(70)
 
                 .build();
 
@@ -103,7 +107,6 @@ public class Sorcier extends Caractere {
     public int defence() {
         return 20;
     }
-
 
     public static int healthChangeSorcier (int hp){
         return hp;

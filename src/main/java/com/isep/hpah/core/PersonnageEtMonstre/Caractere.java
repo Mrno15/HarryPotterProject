@@ -7,7 +7,7 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder(toBuilder = true)
 public abstract class Caractere {
     private String name;
-    private int maxHp, hp, xp, precision;
+    private int maxHp, hp, xp, precision,potion;
 
 
 

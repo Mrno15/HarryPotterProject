@@ -1,59 +1,89 @@
 package com.isep.hpah.core;
+import com.isep.hpah.core.Apprendre.GameLogic;
+import com.isep.hpah.core.PersonnageEtMonstre.Sorcier;
+
 import java.util.Scanner;
 
 
 public enum Spell {
-    Sort1,
-    Sort2,
-    Sort3;
+    Wirgardium_Leviosa,
+    Expecto_Patronum,
+    Accio,
+    Sectumsempra,
+    avada_kedrava,
+    experlliarmus;
 
+    public static void allSpell(Sorcier sorcier) {
+        GameLogic.clearConsole();
+        int input = sorcier.getXp();
+        if (input == 0) {
+            System.out.println("Choose one of the spell :");
+            System.out.println("1. Wirgardium_Leviosa");
+        } else if (input == 2) {
 
-    public static void premierSort() {
-        System.out.println("Choose one of the sort :");
-        System.out.println("1. Sort1");
-        System.out.println("2. Sort2");
+        System.out.println("Choose one of the spell :");
+        System.out.println("1. Wirgardium_Leviosa");
+        System.out.println("Choose one of the spell :");
+    }
+        else if (input == 3) {
+
+            System.out.println("Choose one of the spell :");
+            System.out.println("1. Wirgardium_Leviosa");
+            System.out.println("Choose one of the spell :");
+            System.out.println("Choose one of the spell :");
+            System.out.println("Choose one of the spell :");
+            System.out.println("Choose one of the spell :");
+        }
+        else if (input == 4) {
+            System.out.println("Choose one of the spell :");
+            System.out.println("1. Wirgardium_Leviosa");
+            System.out.println("Choose one of the spell :");
+            System.out.println("Choose one of the spell :");
+            System.out.println("Choose one of the spell :");
+        }
+        else if (input == 5) {
+            System.out.println("Choose one of the spell :");
+            System.out.println("1. Wirgardium_Leviosa");
+            System.out.println("Choose one of the spell :");
+            System.out.println("Choose one of the spell :");
+            System.out.println("Choose one of the spell :");
+        }
     }
 
-    public static void deuxiemeSort1() {
-        System.out.println("Choose one of the sort :");
-        System.out.println("1. Sort1");
-        System.out.println("2. Sort2");
-        System.out.println("3. Sort3");
-    }
-
-
-    public static Spell nomSort(int xp) {
+    public static Spell nomSort(Sorcier sorcier) {
         Scanner scanner = new Scanner(System.in);
+        allSpell(sorcier);
+        int xp = sorcier.getXp();
         while (true) {
             if (xp == 0) {
-                premierSort();
+
                 int core = scanner.nextInt();
                 switch (core) {
                     case 1:
                         System.out.println("Vous avez choisi Coeur de licorne");
-                        return Sort1;
+                        return Wirgardium_Leviosa;
                     case 2:
                         System.out.println("Vous avez choisi Corne de dragon");
-                        return Sort2;
+                        return Expecto_Patronum;
 
                     default:
                         System.out.println("Option invalide");
                         break;
                 }
             } else {
-                deuxiemeSort1();
+
                 int core = scanner.nextInt();
                 switch (core) {
                     case 1:
                         System.out.println("Vous avez choisi Coeur de licorne");
-                        return Sort1;
+                        return Wirgardium_Leviosa;
                     case 2:
                         System.out.println("Vous avez choisi Corne de dragon");
-                        return Sort2;
+                        return Expecto_Patronum;
                     case 3:
 
                         System.out.println("Vous avez choisi Barbe de dumbeldore");
-                        return Sort3;
+                        return Accio;
                     default:
                         System.out.println("Option invalide");
                         break;

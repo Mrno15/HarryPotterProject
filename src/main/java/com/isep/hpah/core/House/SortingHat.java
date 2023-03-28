@@ -12,16 +12,10 @@ import lombok.*;
 
 @Data
 public class SortingHat {
-
-
-
     public static House getHouse() {
-
         House house = House.chooseHouse();
         System.out.println("L'élément sélectionné au hasard est : " + house);
-
   //      Sorcier.setHouse(House);
-
         return house;
     }
 
