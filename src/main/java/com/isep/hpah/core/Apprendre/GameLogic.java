@@ -47,8 +47,6 @@ public class GameLogic {
                 System.out.println(sorcier.getName() + "\nHP: " + sorcier.getHp() + "/" + sorcier.getMaxHp());
                 System.out.println("Choose an action:");
                 int input = Sorcier.choixSorcier();
-                System.out.println(input);
-                input = scanner.nextInt();
                 //react accordingly to player input
                 if (input == 1) {
                     //FIGHT
@@ -72,8 +70,7 @@ public class GameLogic {
                     if (sorcier.getHp() <= 0) {
                         playerDied(); //method to end the game
                         break;
-                    }
-                    else if (enemy.getHp() <= 0) {
+                    } else if (enemy.getHp() <= 0) {
                         //tell the player he won
                         System.out.println("You defeated the " + enemy.getName() + "!");
                         //increase player xp
@@ -82,10 +79,13 @@ public class GameLogic {
                         anythingToContinue();
                         break;
                     }
-
+                }
                 else if (input == 2) {
-                Spell.allSpell(sorcier);
-                anythingToContinue();
+                    String nomSpell = String.valueOf(Spell.nomSort(sorcier));
+                    int degatSpell = sorcier.attackSpell(enemy, Spell.valueOf(nomSpell));
+                    int dmgTook = enemy.attack() - sorcier.defence();
+
+                    anythingToContinue();
                 }
 
                 else if (input == 3) {
@@ -135,7 +135,7 @@ public class GameLogic {
 
                 }
             }
-        }
+
 
 
     public static void playerDied(){

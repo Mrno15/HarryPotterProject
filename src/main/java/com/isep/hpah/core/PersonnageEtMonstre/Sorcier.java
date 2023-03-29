@@ -10,6 +10,8 @@ import lombok.experimental.SuperBuilder;
 
 import java.util.Scanner;
 
+import static com.isep.hpah.core.Spell.Wirgardium_Leviosa;
+
 @Getter
 @Data
 @SuperBuilder
@@ -96,6 +98,9 @@ public class Sorcier extends Caractere {
 
 
     public int attackSpell(Enemy enemy, Spell spell) {
+        if ((enemy.equals("troll") && spell.equals(Wirgardium_Leviosa)) {
+            return 200;
+        }
         return 50;
     }
 

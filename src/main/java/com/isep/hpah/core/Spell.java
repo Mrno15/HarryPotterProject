@@ -63,9 +63,6 @@ public enum Spell {
                     case 1:
                         System.out.println("Vous avez choisi Coeur de licorne");
                         return Wirgardium_Leviosa;
-                    case 2:
-                        System.out.println("Vous avez choisi Corne de dragon");
-                        return Expecto_Patronum;
 
                     default:
                         System.out.println("Option invalide");
